@@ -1,0 +1,164 @@
+{% extends "app/base1.html" %}
+{% block content %}
+<!-- sign up Modal
+  <div class="conatiner">
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">New member Register here!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="xyz">
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              <label for="email">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="password" placeholder="Password">
+              <label for="password">Password</label>
+
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" id="address" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.genesishealth.com/app/files/public/22395/gmc-east-1400x400.jpg" class="d-block w-100"
+        alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Welocome to City Hospital</h2>
+        <p>Book your Appointement,Now</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://www.libertyinsurance.com.hk/sites/libertyhk/files/styles/insurance_product_top_image/public/2020-03/2nd%20opinion%201400%20x400.png?itok=P0Z5uVSk"
+        class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Welocome to City Hospital</h2>
+        <p>Book your Appointement,Now</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1400x400/?nurse" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Welocome to City Hospital</h2>
+        <p>Book your Appointement,Now</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+<!-- </div><br><br><br>
+<form action="{% url 'appointement' %}">
+<center>
+  <div>
+    <h3>Book your Appointement Now.!</h3>
+  </div>
+  <div class="mx-4">
+
+    <input class="btn btn-success" name="" type="submit" value="Submit">
+  </div>
+</center>
+</form>
+<br><br> -->
+<div class="container my-4">
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary"></strong>
+          <h3 class="mb-0">Health Care</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">Living a healthier life might seem like a tall order — the nutrition, the
+            exercise, the inner happiness! But having some friendly advice at your disposal, whenever and wherever you
+            need it, makes it easier and more fun. With just a click, these awesome blogs filled with tips, tricks, and
+            personal stories will inspire you on your journey to wellness.</p>
+          <a href="https://www.healthline.com/" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            src="https://source.unsplash.com/200x250/?health" alt="">
+          <title>Placeholder</title>
+          <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text> -->
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">Covid 19</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">If you are caring for someone with COVID-19 at home or in a non-healthcare setting, follow
+            this advice to protect yourself and others. Learn what to do when someone has symptoms of COVID-19 or when
+            someone has been diagnosed with the virus. This information also should be followed when caring for people
+            who have tested positive but are not showing symptoms..</p>
+          <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html"
+            class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            src="https://source.unsplash.com/200x250/?covid19,doctor" alt="">
+          <title>Placeholder</title>
+          <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text> -->
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+{% endblock %}

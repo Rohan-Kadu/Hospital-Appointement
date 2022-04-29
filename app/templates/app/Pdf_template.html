@@ -1,0 +1,131 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>{{id}}</title>
+        <style type="text/css">
+            body {
+                font-weight: 200;
+                font-size: 14px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #040a0c;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;  
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <p class='title'>Appointement Reciept </p>
+            </div>
+        <div>
+        <!-- <div class='details'>
+            Appointement id:{{id}}<br/>
+            Time:{{time}}  <br/>
+           
+            Date:{{date}}
+            
+            <hr class='hrItem' /> -->
+            <div class="main_class mt-10px">
+                <div class="container mt-4 px-4 py-2">
+                    <div style="font-size: 14px;">
+                        <b>
+                            <address>
+                               Name: {{name}} {{lname}}<br>
+                                Appointement Id: {{id}}<br>
+                            </address>
+                        </b>
+                    </div>
+                    <div class="mt-5" style="font-size: medium;
+                        color: rgb(202, 57, 57);">
+                        <b>
+                            <i>
+                                Dear
+                                {{name}}<br>
+                            </i>
+                        </b>
+                    </div>
+                    <div class="mt-5 px-5" style="font-size: medium;">
+                        <b>
+                            <i>
+                                <p>
+                                    We are looking forward to welcoming you to City Hospital on:
+                                    <u>{{date}}</u> at <u>{{time}}</u>
+                                    <br>
+                                    You've booked a appointement with <u>{{doctor}}</u> for your Treatment.
+                                    And your Appointement Id is <u>{{id}}</u>
+                                    <!-- {{date|date:'dmy'}}{{id}} -->
+                                </p>
+                            </i>
+                        </b>
+                    </div>
+                    
+                    <div class="mt-5" style="font-size: medium;">
+                        <b>
+                            <p>
+                                Sincerly,<br>
+                                 The Staff Of City Hospital
+                            </p>
+                        </b>
+                    </div>
+                    <div class="mt-5 mb-5" style="font-size: larger;
+                            display: flex;
+                            justify-content: center;">
+                        <b>
+                            Thank You...
+                        </b>
+                        <p style="font-size: smaller;
+                           font-style: oblique;">
+                            please carry this reciept at a time of appointement :)
+                        </p>
+                    </div>
+                    <hr style="
+                            margin-bottom: 10px;
+                            border: 0;
+                            height: 5px;
+                            background: #095484;
+                            background-image: linear-gradient(to right, #ccc, #095484, #ccc);">
+                    <div class="mt-5" style="font-size: larger;
+                            display: flex;
+                            justify-content: center;">
+                        <p style="font-size: smaller;
+                           font-style: oblique;">
+                            From City Hospital,India Maharastra Pin-237834 <br>
+                            email: cityhospital@gmail.com <br>
+                            contact no: 9359228998
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    </body>
+</html>
+```
+
+
